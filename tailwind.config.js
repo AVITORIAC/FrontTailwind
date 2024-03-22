@@ -6,8 +6,11 @@ export default {
     extend: {
       screens: {
         'sm': '600px'
+        
         // => @media (min-width: 600px) { ... }
       },
+      height: {
+        'screenP': '80vh'},
       colors: {
         aprendiz: '#56B0FF',
         admin: '#007BC0',

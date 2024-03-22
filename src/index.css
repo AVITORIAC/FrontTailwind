@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+body, #root{
+    height: 100svh;
+}
