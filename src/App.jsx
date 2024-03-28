@@ -1,16 +1,17 @@
 import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Header from './assets/Componentes/Header'
 import Botao from './assets/Componentes/Botao'
 import Footer from './assets/Componentes/Footer'
-import Home from './assets/Pages/Admin/Home'
+import HomeAdmin from './assets/Pages/Admin/HomeAdmin'
 import HomeIns from './assets/Pages/Instrutor/HomeIns'
 import Card from './assets/Componentes/Card'
 import Cadastro_turma from './assets/Pages/Admin/Cadastro_turma'
 import Input from './assets/Componentes/Input'
 import Editar_turma from './assets/Pages/Admin/Editar_turma'
 import Cadastro_aprendiz from './assets/Pages/Admin/Cadastro_aprendiz'
-import Critérios from './assets/Pages/Admin/Critérios'
+import Criterios from './assets/Pages/Admin/Criterios'
 import Editar_criterio from './assets/Pages/Admin/Editar_criterio'
 import Avaliacao from './assets/Pages/Instrutor/Avaliacao'
 import Feedback from './assets/Pages/Instrutor/Feedback'
@@ -32,37 +33,47 @@ import RendimentoGestor from './assets/Pages/Gestor/RendimentoGestor'
 function App() {
   let instrutor = false
   let aprendiz = false
-  let gestor = true
+  let gestor = false
   let admin = false
-  let home = false
+  let home = true
 
   
   return (
     <div className={'h-full gap-4 flex flex-col justify-between'}>
       <Header instrutor={instrutor} aprendiz={aprendiz} gestor={gestor} admin={admin} home={home} />
 
-      {/* <HomeIns></HomeIns> */}
-      {/* <Home></Home> */}
-      {/* <Cadastro_turma></Cadastro_turma> */}
-      {/* <Editar_turma/> */}
-      {/* <Cadastro_aprendiz/> */}
-      {/* <Critérios/> */}
-      {/* <Avaliacao/> */}
-      {/* <Feedback/> */}
-      {/* <Avaliacao_feedback/> */}
-      {/* <Observacoes/>  */}
-      {/* <Chart/> */}
-      {/* <Auto_avaliacao/> */}
-      {/* <Home_aprendiz/> */}
-      {/* <Cadastro/> */}
-      {/* <Editar_criterio/> */}
-      {/* <Login/> */}
-      {/* <RecuperarSenha/> */}
-      {/* <NovaSenha/> */}
-      {/* <Cadastro_Aprendiz/> */}
-      {/* <Cadastro_Gestor/> */}
-      {/* <RendimentoAprendiz/> */}
-      <RendimentoGestor/>
+      <BrowserRouter>
+        <Routes>
+
+          <Route path='/' element={<HomeAdmin/>}></Route>
+
+          <Route path='/Cadastro' element={<Cadastro/>}></Route>
+          <Route path='/Cadastro_Aprendiz' element={<Cadastro_Aprendiz/>}></Route>
+          <Route path='/Cadastro_Gestor' element={<Cadastro_Gestor/>}></Route>
+          <Route path='/Login' element={<Login/>}></Route>
+          <Route path='/RecuperarSenha' element={<RecuperarSenha/>}></Route>
+          <Route path='/NovaSenha' element={<NovaSenha/>}></Route>
+
+          <Route path='/HomeAdmin' element={<HomeAdmin/>}></Route>
+          <Route path='/Cadastro_aprendiz' element={<Cadastro_aprendiz/>}></Route>
+          <Route path='/Cadastro_turma' element={<Cadastro_turma/>}></Route>
+          <Route path='/Criterios' element={<Criterios/>}></Route>
+          <Route path='/Editar_criterio' element={<Editar_criterio/>}></Route>
+          <Route path='/Editar_turma' element={<Editar_turma/>}></Route>
+          <Route path='/Auto_avaliacao' element={<Auto_avaliacao/>}></Route>
+          <Route path='/Home_aprendiz' element={<Home_aprendiz/>}></Route>
+          <Route path='/RendimentoAprendiz' element={<RendimentoAprendiz/>}></Route>
+          <Route path='/RendimentoGestor' element={<RendimentoGestor/>}></Route>
+          <Route path='/HomeIns' element={<HomeIns/>}></Route>
+          <Route path='/Avaliacao' element={<Avaliacao/>}></Route>
+          <Route path='/Avaliacao_feedback' element={<Avaliacao_feedback/>}></Route>
+          <Route path='/Feedback' element={<Feedback/>}></Route>
+          <Route path='/Observacoes' element={<Observacoes/>}></Route>
+        </Routes>
+      </BrowserRouter>
+
+
+     
 
       <Footer ciano={instrutor} verde={gestor} azul={admin} azul_aprendiz={aprendiz} />
     </div>

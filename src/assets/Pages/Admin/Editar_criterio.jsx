@@ -5,7 +5,7 @@ import Botao from '../../Componentes/Botao'
 
 function Editar_criterio() {
     let curso = ['Digital Solutions', 'Mecatrônica', 'Manufatura Digital']
-    let semestre = ['1° Semestre', '2° Semestre', '3° Semestre']
+    let semestre = ['1° Semestre', '2° Semestre', '3° Semestre', 'Todos']
 
     return (
         <div className={`flex flex-col h-full gap-4 mt-10 mx-10`}>

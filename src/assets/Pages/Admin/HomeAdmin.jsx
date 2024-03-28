@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from '../../Componentes/Card'
 
-function Home() {
+function HomeAdmin() {
   return (
     <div className={`flex flex-col w-full h-fit gap-20`}>
       <div className={`mx-auto w-full flex justify-evenly`}> 
@@ -15,4 +15,4 @@ function Home() {
   )
 }
 
-export default Home
+export default HomeAdmin

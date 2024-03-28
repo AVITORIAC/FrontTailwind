@@ -3,6 +3,7 @@ import Botaoroxo from './Botaoroxo'
 import Input from './Input'
 import Titulo from './Titulo'
 import logoBosch from '../Imgs/logoBosch.png'
+import { Link } from 'react-router-dom'
 
     
 function CardCadastro() {
@@ -14,9 +15,9 @@ function CardCadastro() {
                     <Titulo h1='SELECIONE SEU CARGO'></Titulo>
                 </div>
                 <div className={'flex flex-col gap-4 items-center'}>
-                    <Botaoroxo txt='APRENDIZ'></Botaoroxo>
-                    <Botaoroxo txt='INSTRUTOR'></Botaoroxo>
-                    <Botaoroxo txt='GESTOR'></Botaoroxo>
+                    <Link to='/Cadastro_Aprendiz'><Botaoroxo txt='APRENDIZ'></Botaoroxo></Link>
+                    <Link to='/Cadastro_Gestor'><Botaoroxo txt='INSTRUTOR'></Botaoroxo></Link>
+                    <Link to='/Cadastro_Gestor'><Botaoroxo txt='GESTOR'></Botaoroxo></Link>
                 </div>
             </div>
         </div>
