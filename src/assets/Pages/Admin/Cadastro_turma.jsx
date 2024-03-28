@@ -5,14 +5,16 @@ import Botao from '../../Componentes/Botao'
 import { HiMagnifyingGlass } from "react-icons/hi2";
 
 function Cadastro_turma() {
+  let padrinho = ['Vanessa Silva', 'Leonardo Oliveira', 'Cleber Augusto', 'Edmar Ianella']
+
   return (
-    <div className={`flex flex-col h-full justify-around mx-10`}>
+    <div className={`flex flex-col h-full justify-around mx-10 gap-4`}>
       <h1 className={`text-2xl font-bold `}>Turmas</h1>
       <h2 className={`text-lg font-bold`}>Cadastrar turmas</h2>
       <p className={`text-base`}>Preencha as informações abaixo para adicionar uma nova turma:</p>
       <Input label='Selecione o curso'></Input>
       <Input label='Nome da turma'></Input>
-      <Filtro label='Selecione o padrinho ou a madrinha'></Filtro>
+      <Filtro label='Selecione o padrinho ou a madrinha' optionList={padrinho}></Filtro>
 
       <div className={'flex justify-end'}>
         <Botao txt='CADASTRAR'></Botao>

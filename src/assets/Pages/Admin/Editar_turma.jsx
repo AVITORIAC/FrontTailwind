@@ -6,6 +6,7 @@ import Input from '../../Componentes/Input'
 function Editar_turma() {
   let curso = ['Digital Solutions', 'Mecatrônica', 'Manufatura Digital']
   let instrutor = ['Vanessa Silva', 'Cleber', 'Ianella', 'Leonardo', 'Luca']
+  
   return (
     <div className={`flex flex-col h-full gap-4 mt-10 mx-10`}>
       <h1 className={`text-2xl font-bold`}>EDITAR TURMA </h1>

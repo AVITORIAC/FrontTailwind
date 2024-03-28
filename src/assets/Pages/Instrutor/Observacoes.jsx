@@ -18,7 +18,7 @@ function Observacoes() {
       <Filtro id="semestre" label='Selecione o semestre' optionList={semestre}></Filtro>
 
       <label className=" text-sm font-medium leading-6 text-gray-900">Descreva a observação</label>
-      <input type="text" className="flex w-1/2 h-36 py-0 pl-0 mt-0 text-black ring-1 placeholder:text-black" cols={10} placeholder="Insira um texto" ></input>
+      <textarea className=" flex w-1/2 h-24 text-black ring-1 resize placeholder:text-black p-2" placeholder="Insira um texto"  ></textarea>
 
       <label className=" text-sm font-medium leading-6 text-gray-900">Selecione como é essa nota</label>
       <div className={'flex gap-10'}>

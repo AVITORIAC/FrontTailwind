@@ -9,7 +9,7 @@ function Critérios() {
     let semestre = ['1° Semestre', '2° Semestre', '3° Semestre']
 
     return (
-        <div className={`flex flex-col h-full justify-around mx-10`}>
+        <div className={`flex flex-col h-full justify-around mx-10 gap-3`}>
             <h1 className={`text-2xl font-bold`}>CRITÉRIO</h1>
             <h2 className={`text-lg font-bold`}>Cadastrar critério</h2>
             <p className={`text-base font-semibold`}>Preencha as informações abaixo para adicionar um novo critério: </p>
@@ -25,12 +25,12 @@ function Critérios() {
                 <Input label='Pesquise pelo critério que deseja editar ou excluir'></Input>
                 <HiMagnifyingGlass className={`size-8 fill-blue-400 mt-5`} />
             </div>
-            <div className={`w-full h-20 bg-barraedit flex gap-40 justify-center items-center `}>
-                <p className={`text-lg font-bold`}>Inglês</p>
-                <p className={`text-lg font-bold`}>Técnico em Desenvolvimento de Sistemas </p>
-                <p className={`text-lg font-bold`}>Vanessa Silva </p>
-                <p className={`text-lg font-bold`}>EDITAR </p>
-                <p className={`text-lg font-bold`}>EXCLUIR </p>
+            <div className={`w-full h-20 bg-barraedit flex gap-36 justify-center items-center `}>
+                <p className={`text-base font-bold`}>Inglês</p>
+                <p className={`text-base font-bold`}>Técnico em Desenvolvimento de Sistemas </p>
+                <p className={`text-base font-bold`}>Vanessa Silva </p>
+                <p className={`text-base font-bold`}>EDITAR </p>
+                <p className={`text-base font-bold`}>EXCLUIR </p>
 
             </div>
         </div>

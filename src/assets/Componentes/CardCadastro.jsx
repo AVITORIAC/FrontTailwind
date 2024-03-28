@@ -4,6 +4,7 @@ import Input from './Input'
 import Titulo from './Titulo'
 import logoBosch from '../Imgs/logoBosch.png'
 
+    
 function CardCadastro() {
     return (
         <div className={'bg-white relative mt-20 w-7/12 h-screenP '}>

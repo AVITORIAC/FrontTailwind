@@ -19,18 +19,27 @@ import Observacoes from './assets/Pages/Instrutor/Observacoes'
 import Auto_avaliacao from './assets/Pages/Aprendiz/Auto_avaliacao'
 import Home_aprendiz from './assets/Pages/Aprendiz/Home_aprendiz'
 import Cadastro from './assets/Pages/Cadastro/Cadastro'
+import Login from './assets/Pages/Cadastro/Login'
+import RecuperarSenha from './assets/Pages/Cadastro/RecuperarSenha'
+import NovaSenha from './assets/Pages/Cadastro/NovaSenha'
+import Cadastro_Aprendiz from './assets/Pages/Cadastro/Cadastro_Aprendiz'
+import Cadastro_Gestor from './assets/Pages/Cadastro/Cadastro_Gestor'
+import Chart from './assets/Componentes/Chart'
+import RendimentoAprendiz from './assets/Pages/Aprendiz/RendimentoAprendiz'
+import RendimentoGestor from './assets/Pages/Gestor/RendimentoGestor'
+
 
 function App() {
   let instrutor = false
   let aprendiz = false
-  let gestor = false
+  let gestor = true
   let admin = false
   let home = false
 
   
   return (
     <div className={'h-full gap-4 flex flex-col justify-between'}>
-      {/* <Header instrutor={instrutor} aprendiz={aprendiz} gestor={gestor} admin={admin} home={home} /> */}
+      <Header instrutor={instrutor} aprendiz={aprendiz} gestor={gestor} admin={admin} home={home} />
 
       {/* <HomeIns></HomeIns> */}
       {/* <Home></Home> */}
@@ -42,17 +51,20 @@ function App() {
       {/* <Feedback/> */}
       {/* <Avaliacao_feedback/> */}
       {/* <Observacoes/>  */}
+      {/* <Chart/> */}
       {/* <Auto_avaliacao/> */}
       {/* <Home_aprendiz/> */}
-      <Cadastro/>
+      {/* <Cadastro/> */}
       {/* <Editar_criterio/> */}
-      {/* <Input></Input> */}
-      {/* <Card verde1 />
-      <Card verde2 />
-      <Card verde3 />
-      <Card verde4 /> */}
+      {/* <Login/> */}
+      {/* <RecuperarSenha/> */}
+      {/* <NovaSenha/> */}
+      {/* <Cadastro_Aprendiz/> */}
+      {/* <Cadastro_Gestor/> */}
+      {/* <RendimentoAprendiz/> */}
+      <RendimentoGestor/>
 
-      {/* <Footer ciano={instrutor} verde={gestor} azul={admin} azul_aprendiz={aprendiz} /> */}
+      <Footer ciano={instrutor} verde={gestor} azul={admin} azul_aprendiz={aprendiz} />
     </div>
 
 

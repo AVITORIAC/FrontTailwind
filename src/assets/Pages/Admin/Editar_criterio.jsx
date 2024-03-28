@@ -5,7 +5,6 @@ import Botao from '../../Componentes/Botao'
 
 function Editar_criterio() {
     let curso = ['Digital Solutions', 'Mecatrônica', 'Manufatura Digital']
-    let instrutor = ['Vanessa Silva', 'Cleber', 'Ianella', 'Leonardo', 'Luca']
     let semestre = ['1° Semestre', '2° Semestre', '3° Semestre']
 
     return (
@@ -14,7 +13,7 @@ function Editar_criterio() {
             <p className={`text-base`}>Preencha as informações abaixo para editar o critério:</p>
             <Filtro label='Selecione o curso que possui esse critério.' optionList={curso}></Filtro>
             <Input label='Nome do critério'></Input>
-            <Filtro label='Descrição do critério: ajuda o aprendiz ou instrutor a saber mais informações.' optionList={instrutor} ></Filtro>
+            <Input label='Descrição do critério: ajuda o aprendiz ou instrutor a saber mais informações.'> </Input>
             <Filtro label='Selecione o(os) semestre(s) que esse critério deve aparecer.' optionList={semestre} ></Filtro>
             <div className={'flex justify-end'}><Botao txt='SALVAR'></Botao></div>
         </div>
