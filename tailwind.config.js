@@ -29,6 +29,12 @@ export default {
         cardV3: '#1A9C95',
         cardV4: '#147671',
         rosa: '#FFF5FF',
+        gradiente1: '#007BC0',
+        gradiente2: '#419E98',
+        gradiente3: '#9E2896',
+        gradiente4: '#007BC0',
+        gradiente5: '#419E98',
+        gradiente6: '#9E2896',
       }
     },
   },

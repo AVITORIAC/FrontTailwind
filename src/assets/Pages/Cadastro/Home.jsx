@@ -14,7 +14,7 @@ function Home() {
         <div>
             <div className={'flex items-center'}>
                 <div className={''}>
-                    <h1 className={'p-4 mb-2 text-4xl bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text'}>Plataforma online de Feedback</h1>
+                    <h1 className={'p-4 mb-2 text-4xl font-semibold bg-gradient-to-r from-gradiente2 to-gradiente1 inline-block text-transparent bg-clip-text'}>Plataforma online de Feedback</h1>
                     <p className={'pl-4 text-base'}>O Meinung tem por objetivo melhorar o processo do feedback
                         entre os aprendizes e instrutores.</p>
                     <p className={'pl-4 text-base'}>Dessa forma, os dados ficam centralizados
@@ -38,7 +38,7 @@ function Home() {
 
             </div>
             <div className={'flex justify-center items-center mt-10'}>
-                <p className={'text-2xl font-bold bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text'}>NOSSOS SERVIÇOS</p>
+                <p className={'text-2xl font-bold bg-gradient-to-r from-gradiente4 to-gradiente3 inline-block text-transparent bg-clip-text'}>NOSSOS SERVIÇOS</p>
             </div>
 
 
@@ -96,17 +96,17 @@ function Home() {
 
 
             <div className={'flex justify-center items-center mt-10'}>
-                <p className={'text-2xl font-bold bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text'}>FERRAMENTAS</p>
+                <p className={'text-2xl font-bold bg-gradient-to-r from-gradiente6 to-gradiente5 inline-block text-transparent bg-clip-text'}>FERRAMENTAS</p>
             </div>
 
             <div className={'flex justify-center mt-4'}>
                 <div className={`w-11/12 h-48  bg-gray-100 flex items-center justify-around `}>
-                    <div className={'w-full flex items-center justify-around '}>
-                        <div className={'flex flex-col mt-4 items-center '}>
+                    <div className={'w-10/12 flex items-center justify-between '}>
+                        <div className={'flex flex-col w-32 mt-4 items-center '}>
                             <img src={front} alt="" className={'w-28'} />
-                            <p className={'text-blue-800 font-semibold'}>FrontEnd</p>
+                            <p className={'text-blue-800 font-semibold '}>FrontEnd</p>
                         </div>
-                        <div className={''}>
+                        <div className={'flex items-center'}>
                             <p className={'text-base'}>Utilizamos React JS junto com o Vite para a construção da platarfoma e conexão com as APIs.</p>
                         </div>
 
@@ -117,13 +117,13 @@ function Home() {
 
             <div className={'flex justify-center mt-4'}>
                 <div className={`w-11/12 h-48  bg-gray-100 flex items-center justify-around`}>
-                    <div className={'w-full flex items-center justify-around'}>
-                        <div className={'flex flex-col mt-4 items-center '}>
+                    <div className={'w-10/12 flex justify-between '}>
+                        <div className={'flex flex-col mt-4 w-32 items-center '}>
                             <img src={back} alt="" className={'w-28'} />
                             <p className={'text-blue-800 font-semibold'}>BackEnd</p>
                         </div>
-                        <div className={'flex '}>
-                            <p className={'text-base'}>Utilizamos Django para a construção das APIs e o banco de dados Sqlite para<br /> o armazenamento dos dados,
+                        <div className={'flex items-center w-8/12 '}>
+                            <p className={'text-base'}>Utilizamos Django para a construção das APIs e o banco de dados Sqlite <br/>para o armazenamento dos dados,
                                 que já vem por padrão com o Django; <br /> A extração dos dados do PDF foi realizado através da biblioteca do Python;</p>
                         </div>
                     </div>
@@ -133,12 +133,12 @@ function Home() {
 
             <div className={'flex justify-center mt-4'}>
                 <div className={`w-11/12 h-48  bg-gray-100 flex items-center justify-around`}>
-                    <div className={'w-full flex items-center justify-around'}>
-                        <div className={'flex flex-col mt-4 items-center '}>
+                    <div className={'w-10/12 flex justify-between '}>
+                        <div className={'flex flex-col mt-4 w-32 items-center '}>
                             <img src={outros} alt="" className={'w-28'} />
                             <p className={'text-blue-800 font-semibold'}>Outros</p>
                         </div>
-                        <div className={''}>
+                        <div className={'flex items-center w-8/12'}>
                             <p className={'text-base'}>Para os gráficos utilizamos o Charts.js integrado com o banco de dados; <br/>
                             Para o protótipo e logo utilizamos o Figma;<br/> Para as apresentações e video pitch utlizamos o Canva;</p>
                         </div>
@@ -151,3 +151,20 @@ function Home() {
 }
 
 export default Home
+
+
+
+{/* <div className={'flex justify-center mt-4'}>
+<div className={`w-11/12 h-48  bg-gray-100 flex items-center justify-around`}>
+    <div className={'w-full flex justify-around bg-yellow-300'}>
+        <div className={'flex flex-col mt-4 items-center bg-red-700 '}>
+            <img src={outros} alt="" className={'w-28'} />
+            <p className={'text-blue-800 font-semibold'}>Outros</p>
+        </div>
+        <div className={'bg-orange-700'}>
+            <p className={'text-base'}>Para os gráficos utilizamos o Charts.js integrado com o banco de dados; <br/>
+            Para o protótipo e logo utilizamos o Figma;<br/> Para as apresentações e video pitch utlizamos o Canva;</p>
+        </div>
+    </div>
+</div>
+</div> */}
