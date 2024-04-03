@@ -3,6 +3,7 @@ export default {
   content: [ "./index.html",
   "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
+    
     extend: {
       screens: {
         'sm': '600px'
@@ -27,6 +28,7 @@ export default {
         cardV2: '#54ABA5',
         cardV3: '#1A9C95',
         cardV4: '#147671',
+        rosa: '#FFF5FF',
       }
     },
   },

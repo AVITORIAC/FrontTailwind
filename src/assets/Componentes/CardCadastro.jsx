@@ -1,12 +1,11 @@
 import React from 'react'
 import Botaoroxo from './Botaoroxo'
-import Input from './Input'
 import Titulo from './Titulo'
 import logoBosch from '../Imgs/logoBosch.png'
 import { Link } from 'react-router-dom'
 
     
-function CardCadastro() {
+function CardCadastro() { //CARD PARA TELA DE ESCOLHA DO CARGO PARA CADASTRO
     return (
         <div className={'bg-white relative mt-20 w-7/12 h-screenP '}>
             <img src={logoBosch} alt="" />

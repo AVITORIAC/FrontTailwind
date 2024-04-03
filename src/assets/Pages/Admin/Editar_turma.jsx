@@ -3,7 +3,8 @@ import Botao from '../../Componentes/Botao'
 import Filtro from '../../Componentes/Filtro'
 import Input from '../../Componentes/Input'
 
-function Editar_turma() {
+function Editar_turma() { //TELA PARA EDITAR AS TURMAS
+  
   let curso = ['Digital Solutions', 'Mecatrônica', 'Manufatura Digital']
   let instrutor = ['Vanessa Silva', 'Cleber', 'Ianella', 'Leonardo', 'Luca']
   

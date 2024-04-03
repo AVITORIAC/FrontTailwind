@@ -4,7 +4,7 @@ import InputRoxo from './InputRoxo'
 import Titulo from './Titulo'
 import logoBosch from '../Imgs/logoBosch.png'
 
-function CardNovaSenha() {
+function CardNovaSenha() { //CARD PARA TELA DE NOVA SENHA
     return (
         <div className={'bg-white relative mt-20 w-7/12 h-screenP '}>
             <img src={logoBosch} alt="" />
@@ -13,8 +13,8 @@ function CardNovaSenha() {
                     <Titulo h1='NOVA SENHA'></Titulo>
                 </div>
                 <div className={'flex flex-col gap-5 items-center'}>
-                    <InputRoxo label='Digite a nova senha'> </InputRoxo>
-                    <InputRoxo label='Confirme a senha'> </InputRoxo>
+                    <InputRoxo > </InputRoxo>
+                    <InputRoxo> </InputRoxo>
                     <Botaoroxo txt='ENTRAR'></Botaoroxo>
                 </div>
             </div>

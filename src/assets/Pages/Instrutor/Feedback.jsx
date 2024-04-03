@@ -2,7 +2,8 @@ import React from 'react'
 import Filtro from '../../Componentes/Filtro'
 import Card from '../../Componentes/Card'
 
-function Feedback() {
+function Feedback() { //TELA PARA DAR O FEEDBACK COM O APRENDIZ
+    
     let turma = ['DS 6', 'DS 7', 'DS 8', 'DS 9', 'DS 10']
     let aprendiz = ['Eduarda Rabelo Oliveira', 'Julia Roberta Veloso Guiraldeli', 'Carlos Eduardo Faustino Barbosa']
 

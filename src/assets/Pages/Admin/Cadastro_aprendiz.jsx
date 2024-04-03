@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Cadastro_aprendiz() {
+function Cadastro_aprendiz() { //FUNÇÃO DA TELA DE ACEITAR OS CADASTROS
     return (
         <div className={`flex flex-col h-full gap-6 mt-10 mx-10`}>
             <h1 className={`text-2xl font-bold`}>GERENCIAR APRENDIZES</h1>

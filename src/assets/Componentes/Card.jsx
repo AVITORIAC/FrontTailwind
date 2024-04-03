@@ -1,7 +1,10 @@
 import React from 'react'
 import { IoIosArrowForward } from "react-icons/io";
+import { Link, useNavigate } from 'react-router-dom'
 
-function Card({azul1, azul2, azul3, verde1, verde2, verde3, verde4, h1, h2, p}) {
+function Card({ azul1, azul2, azul3, verde1, verde2, verde3, verde4, h1, h2, p }) {
+    //CARDS COLORIDOS 
+    
     const cores = `
     ${azul1 ? 'bg-cardA1' : ''}
     ${azul2 ? 'bg-cardA2' : ''}
@@ -10,6 +13,7 @@ function Card({azul1, azul2, azul3, verde1, verde2, verde3, verde4, h1, h2, p}) 
     ${verde2 ? 'bg-cardV2' : ''}
     ${verde3 ? 'bg-cardV3' : ''}
     ${verde4 ? 'bg-cardV4' : ''}`;
+
 
     return (
         <div className={`h-60 w-96 flex items-center${cores}`}>

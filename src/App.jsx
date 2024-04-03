@@ -23,12 +23,12 @@ import Cadastro from './assets/Pages/Cadastro/Cadastro'
 import Login from './assets/Pages/Cadastro/Login'
 import RecuperarSenha from './assets/Pages/Cadastro/RecuperarSenha'
 import NovaSenha from './assets/Pages/Cadastro/NovaSenha'
-import Cadastro_Aprendiz from './assets/Pages/Cadastro/Cadastro_Aprendiz'
-import Cadastro_Gestor from './assets/Pages/Cadastro/Cadastro_Gestor'
+import Cadastro_de_Aprendiz from './assets/Pages/Cadastro/Cadastro_de_Aprendiz'
+import CadastroGestor from './assets/Pages/Cadastro/CadastroGestor'
 import Chart from './assets/Componentes/Chart'
 import RendimentoAprendiz from './assets/Pages/Aprendiz/RendimentoAprendiz'
 import RendimentoGestor from './assets/Pages/Gestor/RendimentoGestor'
-
+import Home from './assets/Pages/Cadastro/Home'
 
 function App() {
   let instrutor = false
@@ -37,7 +37,7 @@ function App() {
   let admin = false
   let home = true
 
-  
+
   return (
     <div className={'h-full gap-4 flex flex-col justify-between'}>
       <Header instrutor={instrutor} aprendiz={aprendiz} gestor={gestor} admin={admin} home={home} />
@@ -47,9 +47,11 @@ function App() {
 
           <Route path='/' element={<HomeAdmin/>}></Route>
 
+
+          <Route path='/Home' element={<Home/>}></Route>
           <Route path='/Cadastro' element={<Cadastro/>}></Route>
-          <Route path='/Cadastro_Aprendiz' element={<Cadastro_Aprendiz/>}></Route>
-          <Route path='/Cadastro_Gestor' element={<Cadastro_Gestor/>}></Route>
+          <Route path='/Cadastro_de_Aprendiz' element={<Cadastro_de_Aprendiz/>}></Route>
+          <Route path='/CadastroGestor' element={<CadastroGestor/>}></Route>
           <Route path='/Login' element={<Login/>}></Route>
           <Route path='/RecuperarSenha' element={<RecuperarSenha/>}></Route>
           <Route path='/NovaSenha' element={<NovaSenha/>}></Route>
@@ -60,10 +62,13 @@ function App() {
           <Route path='/Criterios' element={<Criterios/>}></Route>
           <Route path='/Editar_criterio' element={<Editar_criterio/>}></Route>
           <Route path='/Editar_turma' element={<Editar_turma/>}></Route>
+
           <Route path='/Auto_avaliacao' element={<Auto_avaliacao/>}></Route>
           <Route path='/Home_aprendiz' element={<Home_aprendiz/>}></Route>
           <Route path='/RendimentoAprendiz' element={<RendimentoAprendiz/>}></Route>
+
           <Route path='/RendimentoGestor' element={<RendimentoGestor/>}></Route>
+
           <Route path='/HomeIns' element={<HomeIns/>}></Route>
           <Route path='/Avaliacao' element={<Avaliacao/>}></Route>
           <Route path='/Avaliacao_feedback' element={<Avaliacao_feedback/>}></Route>

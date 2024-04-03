@@ -3,7 +3,8 @@ import Filtro from '../../Componentes/Filtro'
 import Botao from '../../Componentes/Botao'
 
 
-function Avaliacao_feedback() {
+function Avaliacao_feedback() { //TELA PARA VISUALIZAR A AUTO AVALIAÇÃO DO APRENDIZ
+  
   let turma = ['DS 6', 'DS 7', 'DS 8', 'DS 9', 'DS 10']
   let aprendiz = ['Eduarda Rabelo Oliveira', 'Julia Roberta Veloso Guiraldeli', 'Carlos Eduardo Faustino Barbosa']
   let semestre = ['1° Semestre', '2° Semestre', '3° Semestre']

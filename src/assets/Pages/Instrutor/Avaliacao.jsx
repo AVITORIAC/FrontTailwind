@@ -2,7 +2,8 @@ import React from 'react'
 import Filtro from '../../Componentes/Filtro'
 import Botao from '../../Componentes/Botao'
 
-function Avaliacao() {
+function Avaliacao() { //TELA PARA CONSENSO DAS NOTAS 
+    
     let aprendiz = ['Eduarda Rabelo Oliveira', 'Julia Roberta Veloso Guiraldeli', 'Carlos Eduardo Faustino Barbosa']
     let semestre = ['1° Semestre', '2° Semestre', '3° Semestre']
     let turma = ['DS 6', 'DS 7', 'DS 8', 'DS 9', 'DS 10']

@@ -4,39 +4,45 @@ import footer_verde from "../Imgs/v_footer.png"
 import footer_ciano from "../Imgs/c_footer.png"
 
 
-
 function Footer({ azul, azul_aprendiz, verde, ciano }) {
-
+    //FUNÇÃO PARA TROCAR A IMAGEM DO FOOTER DE ACORDO COM O ACESSO 
+    
     const cores = `
     ${azul ? { footer_azul } : ''}
     ${azul_aprendiz ? { footer_azul } : ''}
     ${verde ? { footer_verde } : ''}
     ${ciano ? { footer_ciano } : ''}`;
 
-    if (azul) {
-        return (
-            // <div className={`${cores}`}></div>
-            <img src={footer_azul} className={`w-full`}></img>
-        )
+    const footer = ''
+
+    switch (footer) {
+
+        case 'azul':
+            return (
+                <img src={footer_azul} className={`w-full`}></img>
+            )
+
+        case 'azul_aprendiz':
+            return (
+                <img src={footer_azul} className={`w-full`}></img>
+            )
+
+        case 'verde':
+            return (
+                <img src={footer_verde} className={`w-full`}></img>
+            )
+
+        case 'ciano':
+            return (
+                <img src={footer_ciano} className={`w-full`}></img>
+            )
+
+        default:
+            return(
+                <></>
+            )
     }
-    else if (verde) {
-        return (
-            // <div className={`${cores}`}></div>
-            <img src={footer_verde} className={`w-full`}></img>
-        )
-    }
-    else if (azul_aprendiz) {
-        return (
-            // <div className={`${cores}`}></div>
-            <img src={footer_azul} className={`w-full`}></img>
-        )
-    }
-    else {
-        return (
-            // <div className={`${cores}`}></div>
-            <img src={footer_ciano} className={`w-full`}></img>
-        )
-    }
+
 }
 
 export default Footer

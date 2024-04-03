@@ -4,7 +4,8 @@ import Input from '../../Componentes/Input'
 import Botao from '../../Componentes/Botao'
 import { HiMagnifyingGlass } from "react-icons/hi2";
 
-function Criterios() {
+function Criterios() { //TELA PARA CADASTROS DE CRITERIOS
+    
     let curso = ['Digital Solutions', 'Mecatrônica', 'Manufatura Digital']
     let semestre = ['1° Semestre', '2° Semestre', '3° Semestre']
 

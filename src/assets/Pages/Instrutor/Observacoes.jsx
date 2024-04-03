@@ -4,7 +4,8 @@ import Botao from '../../Componentes/Botao'
 import { BsEmojiFrown } from "react-icons/bs";
 import { BsEmojiSmile } from "react-icons/bs";
 
-function Observacoes() {
+function Observacoes() { //TELA PARA ADICIONAR ANOTAÇÕES SOBRE OS APRENDIZES
+  
   let aprendiz = ['Eduarda Rabelo Oliveira', 'Julia Roberta Veloso Guiraldeli', 'Carlos Eduardo Faustino Barbosa']
   let semestre = ['1° Semestre', '2° Semestre', '3° Semestre']
   let turma = ['DS 6', 'DS 7', 'DS 8', 'DS 9', 'DS 10']
