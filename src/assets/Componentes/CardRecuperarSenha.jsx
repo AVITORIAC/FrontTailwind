@@ -22,7 +22,7 @@ function CardRecuperarSenha() { //CARD PARA TELA DO CODIGO DE RECUPERAÇÃO DE S
                     <Titulo h1='RECUPERAR SENHA'></Titulo> 
                 </div>
                 <div className={'flex flex-col gap-5 mt-5 items-center'}>
-                    <h2 className={'font-semibold'}>Digite abaixo o código enviado no seu email: allana123@gmail.com <br/> para recuperar sua senha</h2>
+                    <h2 className={'font-semibold'}>Digite abaixo o código enviado no seu email: allana123@gmail.com <br/> para recuperar sua senha. Caso o código não esteja na sua caixa de entrada, verifique o spam.</h2>
                     <InputRoxo value={codigo} onChange={(e) => {setCodigo (e.target.value)}}> </InputRoxo>
 
                     <Botaoroxo txt='VERIFICAR' onClick={recuperar}></Botaoroxo>

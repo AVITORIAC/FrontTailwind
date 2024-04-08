@@ -29,6 +29,8 @@ import Chart from './assets/Componentes/Chart'
 import RendimentoAprendiz from './assets/Pages/Aprendiz/RendimentoAprendiz'
 import RendimentoGestor from './assets/Pages/Gestor/RendimentoGestor'
 import Home from './assets/Pages/Cadastro/Home'
+import Email from './assets/Pages/Admin/Email'
+import Upload from './assets/Pages/Admin/Upload'
 
 function App() {
   let instrutor = false
@@ -62,6 +64,8 @@ function App() {
           <Route path='/Criterios' element={<Criterios/>}></Route>
           <Route path='/Editar_criterio' element={<Editar_criterio/>}></Route>
           <Route path='/Editar_turma' element={<Editar_turma/>}></Route>
+          <Route path='/Email' element={<Email/>} ></Route>
+          <Route path='/Upload' element={<Upload/>} ></Route>
 
           <Route path='/Auto_avaliacao' element={<Auto_avaliacao/>}></Route>
           <Route path='/Home_aprendiz' element={<Home_aprendiz/>}></Route>
