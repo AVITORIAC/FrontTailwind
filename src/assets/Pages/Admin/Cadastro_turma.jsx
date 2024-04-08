@@ -3,6 +3,7 @@ import Input from '../../Componentes/Input'
 import Filtro from '../../Componentes/Filtro'
 import Botao from '../../Componentes/Botao'
 import { HiMagnifyingGlass } from "react-icons/hi2";
+import { Link } from 'react-router-dom';
  
 function Cadastro_turma() { //TELA PARA CADASTRO DE TURMAS
   let padrinho = ['Vanessa Silva', 'Leonardo Oliveira', 'Cleber Augusto', 'Edmar Ianella']
@@ -38,13 +39,13 @@ function Cadastro_turma() { //TELA PARA CADASTRO DE TURMAS
       <h2 className={`text-lg font-bold`}>Editar turma</h2>
       <div className={'flex items-center gap-2'}>
         <Input label='Pesquise pela turma que deseja editar' value={pesquisar} onChange={(e) => {setPesquisar (e.target.value)}}></Input>
-        <HiMagnifyingGlass className={`size-8 fill-blue-400 mt-5`} />
+        <Link onClick={pesquisa}><HiMagnifyingGlass className={`size-8 fill-blue-400 mt-5`} /></Link>
       </div>
       <div className={`w-full h-20 bg-barraedit flex gap-40 justify-center items-center `}>
         <p className={`text-lg font-bold`}>Digital solutions 6</p>
         <p className={`text-lg font-bold`}>Técnico em Desenvolvimento de Sistemas </p>
         <p className={`text-lg font-bold`}>Vanessa Silva </p>
-        <p className={`text-lg font-bold`}>EDITAR </p>
+        <Link to='/Editar_turma'><p className={`text-lg font-bold`}>EDITAR </p></Link>
  
       </div>
     </div>

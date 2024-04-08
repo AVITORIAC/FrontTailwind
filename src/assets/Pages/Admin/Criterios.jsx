@@ -3,6 +3,7 @@ import Filtro from '../../Componentes/Filtro'
 import Input from '../../Componentes/Input'
 import Botao from '../../Componentes/Botao'
 import { HiMagnifyingGlass } from "react-icons/hi2";
+import { Link } from 'react-router-dom';
 
 function Criterios() { //TELA PARA CADASTROS DE CRITERIOS
 
@@ -23,6 +24,13 @@ function Criterios() { //TELA PARA CADASTROS DE CRITERIOS
         console.log('Criterio editado:', editcriterio)
     }
 
+    const pesquisar = () =>{
+        console.log('Pesquisa feita')
+    }
+    const excluir = () =>{
+        console.log('Excluído com sucesso')
+    }
+
     return (
         <div className={`flex flex-col h-full justify-around mx-10 gap-3`}>
             <h1 className={`text-2xl font-bold`}>CRITÉRIO</h1>
@@ -38,14 +46,14 @@ function Criterios() { //TELA PARA CADASTROS DE CRITERIOS
             <h2 className={`text-lg font-bold`}>Editar ou excluir critério</h2>
             <div className={'flex items-center gap-2'}>
                 <Input label='Pesquise pelo critério que deseja editar ou excluir' value={editcriterio} onChange={(e) => { setEditcriterio(e.target.value) }}></Input>
-                <HiMagnifyingGlass className={`size-8 fill-blue-400 mt-5`} />
+                <Link onClick={pesquisar}><HiMagnifyingGlass className={`size-8 fill-blue-400 mt-5`} /></Link>
             </div>
             <div className={`w-full h-20 bg-barraedit flex gap-36 justify-center items-center `}>
                 <p className={`text-base font-bold`}>Inglês</p>
                 <p className={`text-base font-bold`}>Técnico em Desenvolvimento de Sistemas </p>
                 <p className={`text-base font-bold`}>Vanessa Silva </p>
-                <p className={`text-base font-bold`}>EDITAR </p>
-                <p className={`text-base font-bold`}>EXCLUIR </p>
+                <Link to='/Editar_criterio'><p className={`text-base font-bold`}>EDITAR </p></Link>
+                <Link onClick={excluir}><p className={`text-base font-bold`}>EXCLUIR </p></Link>
 
             </div>
         </div>

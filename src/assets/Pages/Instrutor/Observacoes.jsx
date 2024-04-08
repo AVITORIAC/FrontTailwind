@@ -24,12 +24,12 @@ function Observacoes() { //TELA PARA ADICIONAR ANOTAÇÕES SOBRE OS APRENDIZES
     console.log('Comentario:', comentario)
   }
 
-  // const positivoteste = (e) => {
-  //   console.log('positivo')
-  // }
-  // const negativoteste = (e) => {
-  //   console.log('positivo')
-  // }
+  const positivoteste = (e) => {
+    console.log('positivo')
+  }
+  const negativoteste = (e) => {
+    console.log('negativo')
+  }
 
   return (
     <div className={`flex flex-col h-full gap-3 mt-6 mx-10`}>
@@ -45,11 +45,11 @@ function Observacoes() { //TELA PARA ADICIONAR ANOTAÇÕES SOBRE OS APRENDIZES
       <label className=" text-sm font-medium leading-6 text-gray-900">Selecione como é essa nota</label>
       <div className={'flex gap-10'}>
         <div className={'flex gap-3 flex-col items-center'}>
-          <BsEmojiSmile className={'fill-green-600 size-10'}></BsEmojiSmile>
+          <a href='#' onClick={positivoteste}><BsEmojiSmile className={'fill-green-600 size-10'}></BsEmojiSmile></a>
           <p className={'flex '}>Positivo</p>
         </div>
         <div className={'flex gap-3 flex-col items-center'}>
-          <BsEmojiFrown className={'fill-red-600 size-10'}></BsEmojiFrown>
+          <a href='#' onClick={negativoteste}><BsEmojiFrown className={'fill-red-600 size-10'}></BsEmojiFrown></a>
           <p>Negativo</p>
         </div>
 
