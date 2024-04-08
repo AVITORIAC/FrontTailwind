@@ -21,8 +21,8 @@ function Card_login() { //CARD PARA TELA DE LOGIN
                     <Titulo h1='LOGIN'></Titulo>
                 </div>
                 <div className={'flex flex-col gap-5 items-center'}>
-                    <InputRoxo > </InputRoxo>
-                    <InputRoxo > </InputRoxo>
+                    <InputRoxo label='Email'> </InputRoxo>
+                    <InputRoxo label='Senha'> </InputRoxo>
                     <Botaoroxo txt='ENTRAR'></Botaoroxo>
                 </div>
 

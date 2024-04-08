@@ -9,19 +9,19 @@ import outros from '../../Imgs/outros.png'
 import { GoLightBulb } from "react-icons/go";
 
 
-function Home() {
+function Home() {  //TELA INICIAL DA PLATAFORMA 
     return (
         <div>
             <div className={'flex items-center'}>
                 <div className={''}>
-                    <h1 className={'p-4 mb-2 text-4xl font-semibold bg-gradient-to-r from-gradiente2 to-gradiente1 inline-block text-transparent bg-clip-text'}>Plataforma online de Feedback</h1>
-                    <p className={'pl-4 text-base'}>O Meinung tem por objetivo melhorar o processo do feedback
+                    <h1 className={'p-4 mb-2 ml-10 text-4xl font-semibold bg-gradient-to-r from-gradiente2 to-gradiente1 inline-block text-transparent bg-clip-text'}>Plataforma online de Feedback</h1>
+                    <p className={'ml-14 text-base'}>O Meinung tem por objetivo melhorar o processo do feedback
                         entre os aprendizes e instrutores.</p>
-                    <p className={'pl-4 text-base'}>Dessa forma, os dados ficam centralizados
+                    <p className={'ml-14 text-base'}>Dessa forma, os dados ficam centralizados
                         contribuindo para o funcionamento de maneira mais rápida e fácil para todos os envolvidos.</p>
                 </div>
                 <div className={'flex justify-end mr-10'}>
-                    <img src={animação1} alt=""  />
+                    <img src={animação1} alt="" />
                 </div>
             </div>
             <div className={'flex justify-center'}>
@@ -46,7 +46,7 @@ function Home() {
                 <div className={`w-11/12 h-48  bg-rosa rounded-r-full mt-20`}>
                     <div className={'flex items-center justify-around p-4'}>
                         <div className={''}>
-                            <p className={'text-blue-800 font-semibold'}>Auto Avaliação</p>
+                            <p className={'text-gradiente1 font-semibold'}>Auto Avaliação</p>
                         </div>
 
                         <div className={''}>
@@ -62,9 +62,9 @@ function Home() {
 
 
             <div className={'flex justify-center'}>
-                <div className={`w-11/12 h-48  bg-home rounded-l-full mt-20`}>
+                <div className={`w-11/12 h-48  bg-container rounded-l-full mt-20`}>
                     <div className={'flex items-center justify-center mt-4'}>
-                        <p className={'text-pink-500 font-semibold'}>Rendimento/Dashboard</p>
+                        <p className={'text-dashboard font-semibold'}>Rendimento/Dashboard</p>
                     </div>
                     <div className={'flex items-center justify-evenly'}>
                         <div className={''}>
@@ -82,7 +82,7 @@ function Home() {
                 <div className={`w-11/12 h-48  bg-rosa rounded-r-full mt-20`}>
                     <div className={'flex items-center justify-around p-4'}>
                         <div className={''}>
-                            <p className={'text-blue-800 font-semibold'}>Busca de dados</p>
+                            <p className={'text-gradiente1 font-semibold'}>Busca de dados</p>
                         </div>
                         <div className={''}>
                             <p className={'text-base'}>A plataforma recolhe as notas do SENAI de todos os aprendizes.</p>
@@ -123,7 +123,7 @@ function Home() {
                             <p className={'text-blue-800 font-semibold'}>BackEnd</p>
                         </div>
                         <div className={'flex items-center w-8/12 '}>
-                            <p className={'text-base'}>Utilizamos Django para a construção das APIs e o banco de dados Sqlite <br/>para o armazenamento dos dados,
+                            <p className={'text-base'}>Utilizamos Django para a construção das APIs e o banco de dados Sqlite <br />para o armazenamento dos dados,
                                 que já vem por padrão com o Django; <br /> A extração dos dados do PDF foi realizado através da biblioteca do Python;</p>
                         </div>
                     </div>
@@ -139,32 +139,21 @@ function Home() {
                             <p className={'text-blue-800 font-semibold'}>Outros</p>
                         </div>
                         <div className={'flex items-center w-8/12'}>
-                            <p className={'text-base'}>Para os gráficos utilizamos o Charts.js integrado com o banco de dados; <br/>
-                            Para o protótipo e logo utilizamos o Figma;<br/> Para as apresentações e video pitch utlizamos o Canva;</p>
+                            <p className={'text-base'}>Para os gráficos utilizamos o Charts.js integrado com o banco de dados; <br />
+                                Para o protótipo e logo utilizamos o Figma;<br /> Para as apresentações e video pitch utlizamos o Canva;</p>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <div className={'flex justify-center'}>
+                <div className={'w-11/12 h-14 mt-7 mb-6 flex items-center justify-center bg-gray-800'}>
+                    <p className={'text-white'}>Desenvolvido por: Allana Vieira, Carlos Barbosa, Eduarda Oliveira e Julia Guiraldeli</p>
+                </div>
+            </div>
         </div>
     )
 }
 
 export default Home
 
-
-
-{/* <div className={'flex justify-center mt-4'}>
-<div className={`w-11/12 h-48  bg-gray-100 flex items-center justify-around`}>
-    <div className={'w-full flex justify-around bg-yellow-300'}>
-        <div className={'flex flex-col mt-4 items-center bg-red-700 '}>
-            <img src={outros} alt="" className={'w-28'} />
-            <p className={'text-blue-800 font-semibold'}>Outros</p>
-        </div>
-        <div className={'bg-orange-700'}>
-            <p className={'text-base'}>Para os gráficos utilizamos o Charts.js integrado com o banco de dados; <br/>
-            Para o protótipo e logo utilizamos o Figma;<br/> Para as apresentações e video pitch utlizamos o Canva;</p>
-        </div>
-    </div>
-</div>
-</div> */}

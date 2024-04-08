@@ -14,9 +14,9 @@ function CardCadastro() { //CARD PARA TELA DE ESCOLHA DO CARGO PARA CADASTRO
                     <Titulo h1='SELECIONE SEU CARGO'></Titulo>
                 </div>
                 <div className={'flex flex-col gap-4 items-center'}>
-                    <Link to='/Cadastro_Aprendiz'><Botaoroxo txt='APRENDIZ'></Botaoroxo></Link>
-                    <Link to='/Cadastro_Gestor'><Botaoroxo txt='INSTRUTOR'></Botaoroxo></Link>
-                    <Link to='/Cadastro_Gestor'><Botaoroxo txt='GESTOR'></Botaoroxo></Link>
+                    <Link to='/Cadastro_de_Aprendiz'><Botaoroxo txt='APRENDIZ'></Botaoroxo></Link>
+                    <Link to='/CadastroGestor'><Botaoroxo txt='INSTRUTOR'></Botaoroxo></Link>
+                    <Link to='/CadastroGestor'><Botaoroxo txt='GESTOR'></Botaoroxo></Link>
                 </div>
             </div>
         </div>

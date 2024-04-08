@@ -35,6 +35,9 @@ export default {
         gradiente4: '#007BC0',
         gradiente5: '#419E98',
         gradiente6: '#9E2896',
+        dashboard:  '#C535BC',
+        container:  '#F5F8FF',
+        
       }
     },
   },
