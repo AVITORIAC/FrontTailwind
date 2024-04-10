@@ -30,7 +30,7 @@ function CardCadastro_Aprendiz() { //CARD PARA CADASTRO DO APRENDIZ
             <div className={'flex justify-center mt-7 mb-8'}>
                 <Titulo h1='CADASTRO'></Titulo>
             </div>
-            <div className={'flex justify-evenly items-center'}>
+            <div className={'flex justify-evenly items-center sm:flex-col xl-0'}>
                 <div className={'flex flex-col gap-5'}>
                     <InputRoxo label='Nome completo' value={nome} onChange={(e) => {setNome (e.target.value)}}> </InputRoxo>
                     <InputRoxo label='Email' value={email} onChange={(e) => {setEmail (e.target.value)}}> </InputRoxo>

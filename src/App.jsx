@@ -31,24 +31,24 @@ import RendimentoGestor from './assets/Pages/Gestor/RendimentoGestor'
 import Home from './assets/Pages/Cadastro/Home'
 import Email from './assets/Pages/Admin/Email'
 import Upload from './assets/Pages/Admin/Upload'
+import Rendimento_instrutor from './assets/Pages/Instrutor/Rendimento_instrutor'
+import Rendimento_Feedback from './assets/Pages/Instrutor/Rendimento_Feedback'
 
 function App() {
   let instrutor = false
   let aprendiz = false
   let gestor = false
-  let admin = true
+  let admin = false
   let home = false
 
 
   return (
-    <div className={'h-full gap-4 flex flex-col justify-between'}>
+    <div className={'h-full'}>
       <Header instrutor={instrutor} aprendiz={aprendiz} gestor={gestor} admin={admin} home={home} />
 
       <BrowserRouter>
         <Routes>
-
           <Route path='/' element={<HomeAdmin/>}></Route>
-
 
           <Route path='/Home' element={<Home/>}></Route>
           <Route path='/Cadastro' element={<Cadastro/>}></Route>
@@ -77,6 +77,10 @@ function App() {
           <Route path='/Avaliacao' element={<Avaliacao/>}></Route>
           <Route path='/Avaliacao_feedback' element={<Avaliacao_feedback/>}></Route>
           <Route path='/Feedback' element={<Feedback/>}></Route>
+          <Route path='/Rendimento_instrutor' element={<Rendimento_instrutor/>}></Route>
+          <Route path='/Rendimento_Feedback' element={<Rendimento_Feedback/>}></Route>
+
+
           <Route path='/Observacoes' element={<Observacoes/>}></Route>
         </Routes>
       </BrowserRouter>

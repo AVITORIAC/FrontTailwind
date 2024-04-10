@@ -6,12 +6,15 @@ export default {
     
     extend: {
       screens: {
-        'sm': '600px'
+        'sm': '600px',
+        '3xl': '1660px',
+        '4xl': '1860px',
         
         // => @media (min-width: 600px) { ... }
       },
       height: {
-        'screenP': '80vh'},
+        'screenP': '80vh',
+        'screen6': '60vh'},
       colors: {
         aprendiz: '#56B0FF',
         admin: '#007BC0',
