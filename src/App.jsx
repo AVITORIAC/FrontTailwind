@@ -48,7 +48,7 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<HomeAdmin/>}></Route>
+          <Route path='/' element={<Home/>}></Route>
 
           <Route path='/Home' element={<Home/>}></Route>
           <Route path='/Cadastro' element={<Cadastro/>}></Route>
