@@ -25,12 +25,12 @@ function CardCadastro_Aprendiz() { //CARD PARA CADASTRO DO APRENDIZ
     }
 
     return (
-        <div className={'bg-white relative mt-20 w-9/12 h-screenP '}>
+        <div className={'bg-blue-300 relative mt-20 w-9/12 sm:h-5/6 xl:h-5/6 2xl:w-7/12 3xl:w-6/12 sm:bg-pink-200 '}>
             <img src={logoBosch} alt="" />
             <div className={'flex justify-center mt-7 mb-8'}>
                 <Titulo h1='CADASTRO'></Titulo>
             </div>
-            <div className={'flex justify-evenly items-center sm:flex-col xl-0'}>
+            <div className={'flex justify-evenly items-center sm:flex-col xl:flex-row '}>
                 <div className={'flex flex-col gap-5'}>
                     <InputRoxo label='Nome completo' value={nome} onChange={(e) => {setNome (e.target.value)}}> </InputRoxo>
                     <InputRoxo label='Email' value={email} onChange={(e) => {setEmail (e.target.value)}}> </InputRoxo>

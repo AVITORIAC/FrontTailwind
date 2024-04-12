@@ -13,6 +13,7 @@ export default {
         // => @media (min-width: 600px) { ... }
       },
       height: {
+        'screen90': '90vh',
         'screenP': '80vh',
         'screen6': '60vh'},
       colors: {
