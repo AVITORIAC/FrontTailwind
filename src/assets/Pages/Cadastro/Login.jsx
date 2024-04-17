@@ -6,11 +6,14 @@ import Card_login from '../../Componentes/Card_login'
 
 function Login() { //TELA DE LOGIN
     return (
-        <div className={'flex items-center justify-center'}>
-            <img src={fundo} className={'w-full flex absolute'} alt="" />
-            <Card_login></Card_login>
+        <div className={'bg-cover bg-fundo 3xl:h-screen lg:h-screen '}>
+            <div className={'flex items-center justify-center pb-20'}>
+                <Card_login></Card_login>
+            </div>
         </div>
     )
 }
 
 export default Login
+
+

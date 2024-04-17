@@ -7,14 +7,8 @@ import { Link } from 'react-router-dom'
 
 
 function Card_login() { //CARD PARA TELA DE LOGIN 
-    function teste(){
-        console.log('TESTE OK')
-    }
-    function teste2(){
-        console.log('TESTE 2 OK')
-    }
     return (
-        <div className={'bg-white relative mt-20 w-7/12 h-screenP '}>
+        <div className={'bg-white relative mt-20 w-7/12 h-screenP sm:h-screen 3xl:w-5/12 3xl:h-screen6 '}>
             <img src={logoBosch} alt="" />
             <div className={'flex flex-col items-center'}>
                 <div className={'flex mt-10 mb-8'}>
@@ -25,15 +19,14 @@ function Card_login() { //CARD PARA TELA DE LOGIN
                     <InputRoxo type='password' label='Senha'> </InputRoxo>
                     <Botaoroxo txt='ENTRAR'></Botaoroxo>
                 </div>
-
             </div>
             <div className={'flex gap-2 justify-center mt-10'}>
                 <p> Esqueceu a senha?</p>
-                <Link to='/RecuperarSenha' onClick={teste}><p> Recuperar</p></Link>
+                <Link to='/RecuperarSenha'><p> Recuperar</p></Link>
             </div>
             <div className={'flex gap-2 justify-center mt-3'}>
                 <p> Ainda não possui uma conta? </p>
-                <Link to='/Cadastro' onClick={teste2}> <p> Cadastre-se </p></Link>
+                <Link to='/Cadastro'> <p> Cadastre-se </p></Link>
             </div>
         </div>
     )
