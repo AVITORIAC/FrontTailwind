@@ -16,7 +16,7 @@ function RendimentoAprendiz() {
         console.log('semestre:', semes1)
     }
     return (
-        <div className={'flex flex-col gap-6 ml-6'}>
+        <div className={'flex flex-col gap-6 ml-6 '}>
             <Titulo h1='RENDIMENTO'></Titulo>
             <h2>Bem-vindo(a) ao seu rendimento, aqui você consegue acompanhar sua evolução entre os semestres de acordo os principais critérios.</h2>
             <div className={'flex justify-center gap-16 mt-5'}>

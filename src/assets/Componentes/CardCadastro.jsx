@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
     
 function CardCadastro() { //CARD PARA TELA DE ESCOLHA DO CARGO PARA CADASTRO
     return (
-        <div className={'bg-white relative mt-20 w-7/12 h-screenP sm:h-screen6 md:h-5/6 3xl:w-6/12 4xl:w-5/12 4xl:h-4/6'}>
+        <div className={'bg-white relative mt-20 w-7/12 h-fit xl:h-5/6 2xl:w-7/12 3xl:w-6/12 pb-8'}>
             <img src={logoBosch} alt="" />
             <div className={'flex flex-col items-center'}>
                 <div className={'flex mt-10 mb-14'}>

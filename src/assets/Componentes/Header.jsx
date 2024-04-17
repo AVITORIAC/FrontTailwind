@@ -24,7 +24,7 @@ function Header({ gestor, instrutor, home, aprendiz, admin }) { //FUNÇÃO PARA 
       return (
         <div className={`h-20 p-2 w-full ${cores}`}>
           <img src={logo} className={`w-20 sm:w-16 md:w-20 m-2`} />
-          <p className={'text-3xl absolute font-bold inset-x-0 top-4 left-32 h-16 text-white'}>Meinung</p>
+          <p className={'text-3xl absolute font-bold inset-x-0 top-4 left-32 h-16 text-white '}>Meinung</p>
           <a href='/Login'><FiLogIn color='white' className={' size-9 absolute top-4 right-4 h-10 w-10'}></FiLogIn></a>
         </div>
       )
@@ -33,7 +33,7 @@ function Header({ gestor, instrutor, home, aprendiz, admin }) { //FUNÇÃO PARA 
       return (
         <div className={`h-20 p-2 w-full ${cores}`}>
           <img src={logo} className={`w-20 sm:w-16 md:w-20 m-2`} />
-          <p className={'text-3xl absolute font-bold inset-x-0 top-4 left-32 h-16 text-white'}>Meinung</p>
+          <p className={'text-3xl absolute font-bold inset-x-0 top-4 left-32 h-16 text-white '}>Meinung</p>
           <a href='/Home_aprendiz'><IoHome className={` fill-white absolute top-4 right-20 h-10 w-10`}></IoHome></a>
           <MdLogout className={' fill-white size-9 absolute top-4 right-4 h-10 w-10'}></MdLogout>
         </div>

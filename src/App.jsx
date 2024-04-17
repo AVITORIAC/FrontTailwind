@@ -43,7 +43,7 @@ function App() {
 
 
   return (
-    <div className={'h-full'}>
+    <div className={'h-full '}>
       <Header instrutor={instrutor} aprendiz={aprendiz} gestor={gestor} admin={admin} home={home} />
 
       <BrowserRouter>

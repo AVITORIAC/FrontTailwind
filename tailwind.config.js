@@ -5,6 +5,13 @@ export default {
   theme: {
     
     extend: {
+      backgroundImage:{
+        "fundo": "url('src/assets/Imgs/Fundo.jpg')"
+      },
+      fontFamily: {
+        'roboto': ['Roboto', 'sans-serif'],
+        'icones': ['Icones']
+      },
       screens: {
         'sm': '600px',
         '3xl': '1660px',

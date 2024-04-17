@@ -13,8 +13,8 @@ function CardNovaSenha() { //CARD PARA TELA DE NOVA SENHA
                     <Titulo h1='NOVA SENHA'></Titulo>
                 </div>
                 <div className={'flex flex-col gap-5 items-center'}>
-                    <InputRoxo > </InputRoxo>
-                    <InputRoxo> </InputRoxo>
+                    <InputRoxo type='password' label='Digite a nova senha'> </InputRoxo>
+                    <InputRoxo type='password' label='Confimar a senha'> </InputRoxo>
                     <Botaoroxo txt='ENTRAR'></Botaoroxo>
                 </div>
             </div>
