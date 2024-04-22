@@ -32,7 +32,7 @@ function Criterios() { //TELA PARA CADASTROS DE CRITERIOS
     }
 
     return (
-        <div className={`flex flex-col h-full justify-around mx-10 gap-3`}>
+        <div className={`flex flex-col h-fit justify-around mx-10 gap-3 mt-5`}>
             <h1 className={`text-2xl font-bold`}>CRITÉRIO</h1>
             <h2 className={`text-lg font-bold`}>Cadastrar critério</h2>
             <p className={`text-base font-semibold`}>Preencha as informações abaixo para adicionar um novo critério: </p>
@@ -48,12 +48,12 @@ function Criterios() { //TELA PARA CADASTROS DE CRITERIOS
                 <Input label='Pesquise pelo critério que deseja editar ou excluir' value={editcriterio} onChange={(e) => { setEditcriterio(e.target.value) }}></Input>
                 <Link onClick={pesquisar}><HiMagnifyingGlass className={`size-8 fill-blue-400 mt-5`} /></Link>
             </div>
-            <div className={`w-full h-20 bg-barraedit flex gap-36 justify-center items-center `}>
-                <p className={`text-base font-bold`}>Inglês</p>
-                <p className={`text-base font-bold`}>Técnico em Desenvolvimento de Sistemas </p>
-                <p className={`text-base font-bold`}>Vanessa Silva </p>
-                <Link to='/Editar_criterio'><p className={`text-base font-bold`}>EDITAR </p></Link>
-                <Link onClick={excluir}><p className={`text-base font-bold`}>EXCLUIR </p></Link>
+            <div className={`w-full h-20 bg-barraedit flex gap-36 justify-center items-center sm:gap-10  sm:pl-2 sm:pr-2 `}>
+                <p className={`text-base font-bold font-roboto sm:text-sm  lg:text-base xl:text-xl`}>Inglês</p>
+                <p className={`text-base font-bold font-roboto sm:text-sm lg:text-base xl:text-xl`}>Técnico em Desenvolvimento de Sistemas </p>
+                <p className={`text-base font-bold font-roboto sm:text-sm lg:text-base xl:text-xl`}>Vanessa Silva </p>
+                <Link to='/Editar_criterio'><p className={`text-base font-bold font-roboto sm:text-sm lg:text-base xl:text-xl`}>EDITAR </p></Link>
+                <Link onClick={excluir}><p className={`text-base font-bold font-roboto sm:text-sm lg:text-base xl:text-xl`}>EXCLUIR </p></Link>
 
             </div>
         </div>

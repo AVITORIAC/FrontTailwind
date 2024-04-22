@@ -14,8 +14,8 @@ function Upload() {
             <h1 className={`text-2xl font-bold`}>NOTAS DO SENAI</h1>
             <h2 className={`text-lg font-bold`}>Selecione o arquivo</h2>
             <p className={`text-base`}>Selecione o arquivo .xlsx que contém as notas dos aprendizes do SENAI.</p>
-            <Input label='Insira o e-mail' type='file' value={email} onChange={(e) => { setEmail(e.target.value) }}></Input>
-            <input className="block w-80 h-52 py-1.5 pl-2 text-black ring-1  focus:ring-indigo-400 placeholder:text-black" placeholder="Insira um texto"></input>
+            <Input label='Faça o upload do arquivo' type='file' value={email} onChange={(e) => { setEmail(e.target.value) }}></Input>
+           
             <div className={'flex justify-end'}><Botao txt='ENVIAR' onClick={enviar}></Botao></div>
         </div>
     )

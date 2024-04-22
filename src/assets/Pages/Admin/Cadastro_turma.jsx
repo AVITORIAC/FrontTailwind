@@ -25,10 +25,10 @@ function Cadastro_turma() { //TELA PARA CADASTRO DE TURMAS
   }
  
   return (
-    <div className={`flex flex-col h-full justify-around mx-10 gap-4`}>
-      <h1 className={`text-2xl font-bold `}>Turmas</h1>
-      <h2 className={`text-lg font-bold`}>Cadastrar turmas</h2>
-      <p className={`text-base`}>Preencha as informações abaixo para adicionar uma nova turma:</p>
+    <div className={`flex flex-col h-fit justify-around mx-10 gap-4 mt-5`}>
+      <h1 className={`text-2xl font-bold font-roboto `}>Turmas</h1>
+      <h2 className={`text-lg font-bold font-roboto`}>Cadastrar turmas</h2>
+      <p className={`text-base font-roboto`}>Preencha as informações abaixo para adicionar uma nova turma:</p>
       <Filtro label='Selecione o curso' optionList={cursos} value={cursos} onChange={(e) => {setCurso (e.target.value)}}></Filtro>
       <Input label='Nome da turma' value={turma} onChange={(e) => {setTurma (e.target.value)}}></Input>
       <Filtro label='Selecione o padrinho ou a madrinha' optionList={padrinho} value={padrinhos} onChange={(e) => {setPadrinhos (e.target.value)}}></Filtro>
@@ -41,11 +41,11 @@ function Cadastro_turma() { //TELA PARA CADASTRO DE TURMAS
         <Input label='Pesquise pela turma que deseja editar' value={pesquisar} onChange={(e) => {setPesquisar (e.target.value)}}></Input>
         <Link onClick={pesquisa}><HiMagnifyingGlass className={`size-8 fill-blue-400 mt-5`} /></Link>
       </div>
-      <div className={`w-full h-20 bg-barraedit flex gap-40 justify-center items-center `}>
-        <p className={`text-lg font-bold`}>Digital solutions 6</p>
-        <p className={`text-lg font-bold`}>Técnico em Desenvolvimento de Sistemas </p>
-        <p className={`text-lg font-bold`}>Vanessa Silva </p>
-        <Link to='/Editar_turma'><p className={`text-lg font-bold`}>EDITAR </p></Link>
+      <div className={`w-full h-20 bg-barraedit flex gap-40 justify-center items-center sm:gap-10  sm:pl-2 sm:pr-2`}>
+        <p className={`text-base font-bold font-roboto sm:text-sm lg:text-base xl:text-xl`}>Digital solutions 6</p>
+        <p className={`text-lg font-bold font-roboto sm:text-sm lg:text-base xl:text-xl`}>Técnico em Desenvolvimento de Sistemas </p>
+        <p className={`text-lg font-bold font-roboto sm:text-sm lg:text-base xl:text-xl`}>Vanessa Silva </p>
+        <Link to='/Editar_turma'><p className={`text-lg font-bold font-roboto sm:text-sm lg:text-base xl:text-xl`}>EDITAR </p></Link>
  
       </div>
     </div>

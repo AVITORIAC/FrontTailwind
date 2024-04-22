@@ -38,7 +38,7 @@ function App() {
   let instrutor = false
   let aprendiz = false
   let gestor = false
-  let admin = false
+  let admin = true
   let home = false
 
 
