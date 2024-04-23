@@ -20,7 +20,7 @@ function Home() {  //TELA INICIAL DA PLATAFORMA
                     <p className={'ml-14 text-base'}>Dessa forma, os dados ficam centralizados
                         contribuindo para o funcionamento de maneira mais rápida e fácil para todos os envolvidos.</p>
                 </div>
-                <div className={'flex justify-end mr-10'}>
+                <div className={'flex justify-end mr-10 mt-5'}>
                     <img src={animação1} alt="" />
                 </div>
             </div>

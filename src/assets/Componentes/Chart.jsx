@@ -45,7 +45,7 @@ export const data = {
 const Chart = () => {
  
     return (
-        <div style={{width: 1000, height:500}}>
+        <div style={{width: 1000, height:450}}>
            <Line options={options} data={data} />
         </div>
     )
