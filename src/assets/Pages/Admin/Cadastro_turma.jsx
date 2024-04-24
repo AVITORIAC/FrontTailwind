@@ -25,10 +25,10 @@ function Cadastro_turma() { //TELA PARA CADASTRO DE TURMAS
   }
  
   return (
-    <div className={`flex flex-col h-fit justify-around mx-10 gap-4 mt-5`}>
+    <div className={`flex flex-col sm:h-full gap-4 mx-10 sm:mb-14 mt-5`}>
       <h1 className={`text-2xl font-bold font-roboto `}>Turmas</h1>
       <h2 className={`text-lg font-bold font-roboto`}>Cadastrar turmas</h2>
-      <p className={`text-base font-roboto`}>Preencha as informações abaixo para adicionar uma nova turma:</p>
+      <p className={`text-base font-roboto font-semibold`}>Preencha as informações abaixo para adicionar uma nova turma:</p>
       <Filtro label='Selecione o curso' optionList={cursos} value={cursos} onChange={(e) => {setCurso (e.target.value)}}></Filtro>
       <Input label='Nome da turma' value={turma} onChange={(e) => {setTurma (e.target.value)}}></Input>
       <Filtro label='Selecione o padrinho ou a madrinha' optionList={padrinho} value={padrinhos} onChange={(e) => {setPadrinhos (e.target.value)}}></Filtro>
@@ -36,7 +36,7 @@ function Cadastro_turma() { //TELA PARA CADASTRO DE TURMAS
       <div className={'flex justify-end'}>
         <Botao txt='CADASTRAR' onClick={cadastrar}></Botao>
       </div>
-      <h2 className={`text-lg font-bold`}>Editar turma</h2>
+      <h2 className={`text-lg font-roboto font-bold`}>Editar turma</h2>
       <div className={'flex items-center gap-2'}>
         <Input label='Pesquise pela turma que deseja editar' value={pesquisar} onChange={(e) => {setPesquisar (e.target.value)}}></Input>
         <Link onClick={pesquisa}><HiMagnifyingGlass className={`size-8 fill-blue-400 mt-5`} /></Link>

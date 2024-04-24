@@ -13,7 +13,7 @@ function Auto_avaliacao() { //FUNÇÃO DA TELA DE AUTO AVALIAÇÃO DO ACESSO DE 
         console.log('semestre:', semes)
     }
 
-    const acesso = 'adm'
+    const acesso = ''
 
     switch (acesso) {
         case 'adm':

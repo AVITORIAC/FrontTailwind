@@ -10,10 +10,16 @@ function Feedback() { //TELA PARA DAR O FEEDBACK COM O APRENDIZ
     let aprendiz = ['Eduarda Rabelo Oliveira', 'Julia Roberta Veloso Guiraldeli', 'Carlos Eduardo Faustino Barbosa']
 
     return (
-        <div className={`flex flex-row justify-between gap-4 mt-10 mx-10`}>
-            <div className={'flex flex-col'}>
-            <h1 className={`text-2xl font-bold`}>FEEDBACK</h1>
+        <div className={`flex gap-4 mt-10 mx-10 sm:flex-col sm:gap-10 md:flex-row md:justify-between`}>
+            <div className={'flex flex-col sm:gap-4'}>
+            <h1 className={`text-2xl font-bold font-roboto`}>FEEDBACK</h1>
             <Filtro id="turma" label='Selecione a turma' optionList={turma} ></Filtro>
+            <Filtro id="aprendiz" label='Selecione o aprendiz' optionList={aprendiz} ></Filtro>
+            <Filtro id="aprendiz" label='Selecione o aprendiz' optionList={aprendiz} ></Filtro>
+            <Filtro id="aprendiz" label='Selecione o aprendiz' optionList={aprendiz} ></Filtro>
+            <Filtro id="aprendiz" label='Selecione o aprendiz' optionList={aprendiz} ></Filtro>
+            <Filtro id="aprendiz" label='Selecione o aprendiz' optionList={aprendiz} ></Filtro>
+            <Filtro id="aprendiz" label='Selecione o aprendiz' optionList={aprendiz} ></Filtro>
             <Filtro id="aprendiz" label='Selecione o aprendiz' optionList={aprendiz} ></Filtro>
             </div>
             

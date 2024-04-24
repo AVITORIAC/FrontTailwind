@@ -36,7 +36,7 @@ import Rendimento_Feedback from './assets/Pages/Instrutor/Rendimento_Feedback'
 
 function App() {
   let instrutor = false
-  let aprendiz = true
+  let aprendiz = false
   let gestor = false
   let admin = false
   let home = false

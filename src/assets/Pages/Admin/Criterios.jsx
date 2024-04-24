@@ -32,10 +32,10 @@ function Criterios() { //TELA PARA CADASTROS DE CRITERIOS
     }
 
     return (
-        <div className={`flex flex-col h-fit justify-around mx-10 gap-3 mt-5`}>
-            <h1 className={`text-2xl font-bold`}>CRITÉRIO</h1>
-            <h2 className={`text-lg font-bold`}>Cadastrar critério</h2>
-            <p className={`text-base font-semibold`}>Preencha as informações abaixo para adicionar um novo critério: </p>
+        <div className={`flex flex-col border-4 border-blue-700  lg:h-full justify-around mx-10 gap-3 mt-5`}>
+            <h1 className={`text-2xl font-roboto font-bold`}>CRITÉRIO</h1>
+            <h2 className={`text-lg font-roboto font-bold`}>Cadastrar critério</h2>
+            <p className={`text-base font-roboto font-semibold`}>Preencha as informações abaixo para adicionar um novo critério: </p>
             <Filtro id="curso" label='Selecione o curso que possui esse critério.' optionList={curso} value={turma} onChange={(e) => { setTurma(e.target.value) }}></Filtro>
             <Input label='Nome do critério' value={criterio} onChange={(e) => { setCriterio(e.target.value) }}></Input>
             <Input label='Descrição do critério: ajuda o aprendiz ou instrutor a saber mais informações' value={descricao} onChange={(e) => { setDescricao(e.target.value) }}></Input>
@@ -43,7 +43,7 @@ function Criterios() { //TELA PARA CADASTROS DE CRITERIOS
             <div className={'flex justify-end'}>
                 <Botao txt='CADASTRAR' onClick={cadastrar}></Botao>
             </div>
-            <h2 className={`text-lg font-bold`}>Editar ou excluir critério</h2>
+            <h2 className={`text-lg font-bold font-roboto`}>Editar ou excluir critério</h2>
             <div className={'flex items-center gap-2'}>
                 <Input label='Pesquise pelo critério que deseja editar ou excluir' value={editcriterio} onChange={(e) => { setEditcriterio(e.target.value) }}></Input>
                 <Link onClick={pesquisar}><HiMagnifyingGlass className={`size-8 fill-blue-400 mt-5`} /></Link>

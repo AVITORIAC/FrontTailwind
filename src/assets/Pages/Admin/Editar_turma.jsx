@@ -20,8 +20,8 @@ function Editar_turma() { //TELA PARA EDITAR AS TURMAS
  
   return (
     <div className={`flex flex-col h-full gap-4 mt-10 mx-10`}>
-      <h1 className={`text-2xl font-bold`}>EDITAR TURMA </h1>
-      <p className={`text-base`}>Preencha as informações abaixo para editar a turma:</p>
+      <h1 className={`text-2xl font-bold font-roboto`}>EDITAR TURMA </h1>
+      <p className={`text-base font-roboto font-semibold`}>Preencha as informações abaixo para editar a turma:</p>
       <Filtro label='Selecione o curso.' optionList={cursos} value={curso} onChange={(e) => (setCurso (e.target.value))} ></Filtro>
       <Input label='Nome da turma' value={turma} onChange={(e) => (setTurma (e.target.value))}></Input>
       <Filtro label='Selecione o padrinho ou a madrinha.' optionList={instrutor} value={padrinhos} onChange={(e) => (setPadrinhos (e.target.value))}></Filtro>

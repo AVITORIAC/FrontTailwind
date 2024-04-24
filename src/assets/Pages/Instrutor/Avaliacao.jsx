@@ -20,7 +20,7 @@ function Avaliacao() { //TELA PARA CONSENSO DAS NOTAS
  
     return (
         <div className={`flex flex-col h-full gap-4 mt-10 mx-10`}>
-            <h1 className={`text-2xl font-bold`}>AVALIAÇÃO</h1>
+            <h1 className={`text-2xl font-bold font-roboto`}>AVALIAÇÃO</h1>
             <Filtro id='turma' label='Selecione a turma' optionList={turma} value={turma1} onChange={(e) => (setTurma1(e.target.value))}></Filtro>
             <Filtro id='aprendiz' label='Selecione o aprendiz' optionList={aprendiz} value={aluno} onChange={(e) => (setAluno(e.target.value))}></Filtro>
             <Filtro id='semestre' label='Selecione o semestre' optionList={semestre} value={semes} onChange={(e) => (setSemes(e.target.value))}></Filtro>

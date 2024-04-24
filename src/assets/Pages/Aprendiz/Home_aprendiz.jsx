@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 function Home_aprendiz() { //FUNÇÃO DA TELA INICIAL DO ACESSO DE APRENDIZ
 
-    const acesso = ''
+    const acesso = 'adm'
 
     switch (acesso) {
 

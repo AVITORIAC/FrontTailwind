@@ -28,30 +28,26 @@ function Rendimento_instrutor() { //TELA PARA VISUALIZAR O RENDIMENTO DO APRENDI
     console.log('aluno2:', aluno2)
   }
   return (
-    <div className={`flex flex-col h-full`}>
-      <h1 className={`text-2xl font-bold ml-10 `}>RENDIMENTO</h1>
-      <p className={`text-base ml-10 mt-3`}>Utilize os filtros para comparar alunos de acordo com critérios específicos.</p>
-      <div className={'flex items-center flex-col mt-10'}>
-        <div className={'flex justify-around items-center w-9/12 mb-8'}>
-          <div className={'flex flex-col justify-around h-40'}>
-            <Filtro id='turma' label='Selecione a turma' optionList={turma} value={turmas} onChange={(e) => (setTurmas(e.target.value))}></Filtro>
-            <Filtro id='aprendiz' label='Selecione o aprendiz' optionList={aprendiz} value={aluno} onChange={(e) => (setAluno(e.target.value))}></Filtro>
-
-          </div>
-          <div className={'flex flex-col justify-around h-40'}>
-            <Filtro id='tipoCriterio' label='Selecione o tipo de criterio' optionList={tipo} value={tipos} onChange={(e) => (setTipos(e.target.value))}></Filtro>
-            <Filtro id='criterio' label='Selecione o critério' optionList={criterios} value={criterio} onChange={(e) => (setCriterio(e.target.value))}></Filtro>
-
-          </div>
-          <div className={'flex flex-col justify-around items-end h-40'}>
-            <Filtro id='aluno2' label='Selecione outro aprendiz' optionList={aprendiz2} value={aluno2} onChange={(e) => (setAluno2(e.target.value))}></Filtro>
-            <Link><Botao txt='FINALIZAR' onClick={finalizar}></Botao></Link>
-          </div>
-        </div>
-        <div className={'flex justify-center '}>
-          <Chart></Chart>
+    <div className={`w-full justify-center sm:w-full sm:p-6 md:w-full md:p-8 lg:w-full lg:p-10 xl:w-full xl:p-10 `}>
+      <h1 className={`text-2xl font-bold font-roboto`}>RENDIMENTO</h1>
+      <p className={`text-base font-semibold font-roboto pt-4`}>Utilize os filtros para comparar alunos de acordo com critérios específicos. </p>
+      <div className={'flex  flex-row gap-5 p-5 sm:flex-col md:flex-col lg:flex-col xl:flex-row 2xl:justify-items-center lg:justify-evenly'}>
+        <Filtro id='turma' label='Selecione a turma' optionList={turma} value={turmas} onChange={(e) => (setTurmas(e.target.value))}></Filtro>
+        <Filtro id='aprendiz' label='Selecione o aprendiz' optionList={aprendiz} value={aluno} onChange={(e) => (setAluno(e.target.value))}></Filtro>
+        <Filtro id='semestre' label='Selecione o tipo de criterio' optionList={tipo} value={tipos} onChange={(e) => (setTipos(e.target.value))}></Filtro>
+      </div>
+      <div className={'flex  flex-row gap-5 p-5 sm:flex-col md:flex-col lg:flex-col xl:flex-row 2xl:justify-items-center lg:justify-evenly'}>
+        <Filtro id='semestre' label='Selecione outro aprendiz' optionList={aprendiz2} value={aluno2} onChange={(e) => (setAluno2(e.target.value))}></Filtro>
+        <Filtro id='semestre' label='Selecione um critério' optionList={criterios} value={criterio} onChange={(e) => (setCriterio(e.target.value))}></Filtro>
+        <div className={'flex w-80 justify-end items-end sm:justify-normal'}>
+          <Link><Botao txt='FINALIZAR' onClick={finalizar}></Botao></Link>
         </div>
       </div>
+ 
+      <div className={'flex justify-center mt-5 sm:w-full'}>
+        <Chart />
+      </div>
+ 
     </div>
   )
 }

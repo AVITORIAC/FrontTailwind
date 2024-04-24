@@ -4,15 +4,13 @@ import CardCadastro from '../../Componentes/CardCadastro'
 
 
 function Cadastro() { //TELA DE ESCOLHA DO CARGO PARA CADASTRO
-  return (
-    <div className={'bg-cover bg-fundo 3xl:h-screen lg:h-screen'}>
-      <div className={'flex items-center justify-center pb-20'}>
-        {/* <img src={fundo} className={'w-full flex absolute sm:h-full '} alt="" /> */}
+    return (
+      <div className={'flex items-center sm:h-screen md:h-screen lg:h-screen xl:h-screen 2xl:h-screen justify-center '}>
+        <img src={fundo} className={'w-full sm:h-screen md:h-screen lg:h-screen xl:h-screen 2xl:h-screen flex absolute'} alt="" />
         <CardCadastro></CardCadastro>
       </div>
-    </div>
-  )
-}
+    )
+  }
 
 
-export default Cadastro
+  export default Cadastro

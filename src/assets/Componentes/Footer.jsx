@@ -13,7 +13,7 @@ function Footer({ azul, azul_aprendiz, verde, ciano }) {
     ${verde ? { footer_verde } : ''}
     ${ciano ? { footer_ciano } : ''}`;
 
-    const footer = 'azul_aprendiz'
+    const footer = ''
 
     switch (footer) {
 
