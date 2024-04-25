@@ -48,6 +48,7 @@ export default {
         gradiente6: '#9E2896',
         dashboard:  '#C535BC',
         container:  '#F5F8FF',
+        cianoclaro: '#DEF5F3',
         
       }
     },
