@@ -39,7 +39,7 @@ function Observacoes() { //TELA PARA ADICIONAR ANOTAÇÕES SOBRE OS APRENDIZES
       <Filtro id="semestre" label='Selecione o semestre' optionList={semestre} value={semes} onChange={(e) => (setSemes(e.target.value))}></Filtro>
  
       <label className=" text-base font-medium font-roboto leading-6 text-gray-900">Descreva a observação</label>
-      <textarea className=" flex w-1/2 h-24 text-black ring-1 placeholder:text-black p-2" placeholder="Insira um texto" value={comentario} onChange={(e) => (setComentario(e.target.value))} ></textarea>
+      <textarea className=" flex w-80 h-24 text-black ring-1 placeholder:text-black p-2" placeholder="Insira um texto" value={comentario} onChange={(e) => (setComentario(e.target.value))} ></textarea>
  
       <label className=" text-base font-medium font-roboto text-gray-900">Selecione como é essa nota</label>
       <div className={'flex gap-10'}>

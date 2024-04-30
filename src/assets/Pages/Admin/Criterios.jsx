@@ -24,15 +24,26 @@ function Criterios() { //TELA PARA CADASTROS DE CRITERIOS
         console.log('Criterio editado:', editcriterio)
     }
 
-    const pesquisar = () =>{
+    const pesquisar = () => {
         console.log('Pesquisa feita')
     }
-    const excluir = () =>{
-        console.log('Excluído com sucesso')
+    const excluir = () => {
+
+        var nomecriterio = prompt('Digite o nome do critério para excluí-lo')
+
+        if (nomecriterio == null || nomecriterio == "") {
+            alert("O uso do prompt foi cancelado!");
+        }
+        else{
+            alert(nomecriterio + " excluído com sucesso!"
+            )
+        }
+
     }
 
+
     return (
-        <div className={`flex flex-col border-4 border-blue-700  lg:h-full justify-around mx-10 gap-3 mt-5`}>
+        <div className={`flex flex-col md:h-full lg:h-full justify-around mx-10 gap-3 mt-5`}>
             <h1 className={`text-2xl font-roboto font-bold`}>CRITÉRIO</h1>
             <h2 className={`text-lg font-roboto font-bold`}>Cadastrar critério</h2>
             <p className={`text-base font-roboto font-semibold`}>Preencha as informações abaixo para adicionar um novo critério: </p>
