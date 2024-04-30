@@ -13,8 +13,8 @@ function Home_aprendiz() { //FUNÇÃO DA TELA INICIAL DO ACESSO DE APRENDIZ
 
         case 'adm':
             return (
-                <div className={'ml-7 h-full '}>
-                    <div className={'flex p-24'}>
+                <div className={'ml-7 h-full flex flex-col justify-around'}>
+                    <div className={'flex max-w-[60rem]'}>
                         <img src={img1} alt="" />
                         <div className={'ml-6'}>
                             <h1 className={'font-roboto font-bold text-fonte text-2xl sm:text-xl'}>Preencher avaliação da área</h1>
@@ -25,7 +25,7 @@ function Home_aprendiz() { //FUNÇÃO DA TELA INICIAL DO ACESSO DE APRENDIZ
                             </div>
                         </div>
                     </div>
-                    <div className={'flex p-24'}>
+                    <div className={'flex '}>
                         <img src={img2} alt="" />
                         <div className={'ml-6'}>
                             <h1 className={'font-roboto font-bold text-fonte text-2xl sm:text-xl'}>Acompanhar rendimento</h1>
